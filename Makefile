@@ -6,7 +6,6 @@
 ## help: print this help message
 .PHONY: help
 help:
-	@echo "\t##IMPORTANT##: please run 'echo .envrc >> .gitignore' at very first time"
 	@echo 'Usage:'
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
 
